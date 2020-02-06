@@ -1,5 +1,6 @@
 # MY Portfolio
 #### This is My profile if you need a web Developer, 06/02/2020
+<a href="https://github.com/fattym/My-Pro-file">view my portfolio</a>
 #### By:
 1. Joseph Nganga ; lead developer
 1. Moringa TM's ; Mentors
