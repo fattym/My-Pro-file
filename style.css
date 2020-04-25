@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgba(231,154,255,0.75);	
+    --primary-color: rgb(255, 89, 0,0.75);	
     --overlay-color:var(--primary-color);
     --menu-speed: 0.75s;
   }
@@ -10,7 +10,8 @@
 
 body{
     font-family: 'Yatra One', cursive;
-    background-image: url(https://bit.ly/2uz4VkJ);
+   /*  background-image: url(https://bit.ly/2uz4VkJ); */
+   background-image: url("https://bit.ly/2xUuL4s");
     background-attachment: fixed;
     background-size: cover;
     
@@ -21,7 +22,7 @@ body{
 }
 h1{
   font-size:50px;
-  color:yellow;
+  color:rgb();
   border: #55ACEE;
 }
 h2{
@@ -41,7 +42,7 @@ h1,h2{
     text-align: center;
     font-size: xx-large;
     font-family: 'Lobster', cursive;
-    color: yellow;
+    color: rgb(255, 89, 0);
 }
 p{
     font: 1em sans-serif;

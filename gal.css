@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgba(231,154,255,0.75);	
+    --primary-color: rgb(255, 89, 0,0.75);	
     --overlay-color:var(--primary-color);
     --menu-speed: 0.75s;
   }
@@ -9,7 +9,7 @@
   }
   body{
     font-family: 'Yatra One', cursive;
-    background-image: url(https://bit.ly/2uz4VkJ);
+    background-image: url("https://bit.ly/2xUuL4s");
     background-attachment: fixed;
     background-size: cover;
     
@@ -18,11 +18,11 @@
   
   h1{
   font-size:50px;
-  color:yellow;
+  color:rgb(255, 89, 0);
   border: #55ACEE;
   }
   h2{
-  color:#fff;
+  color:black;
   }
   h1,h2{
     text-align: center;
@@ -34,7 +34,7 @@
     text-align: center;
     font-size: xx-large;
     font-family: 'Lobster', cursive;
-    color: yellow;
+    color: rgb(255, 89, 0);
   }
   p{
     font: 1em sans-serif;
@@ -43,7 +43,7 @@
     color:orange;
   }
   ul{
-    color:yellow;
+    color:whitesmoke;
   }
   .top{
     border-bottom: 5px solid whitesmoke;
@@ -54,7 +54,7 @@
     border-radius: 50%;
   }
   #red{
-    color:whitesmoke;
+    color:black;
    
   }
   
@@ -215,11 +215,11 @@
   /*divs*/
   
   #P1{
-    color:rgba(231,154,255,0.75);
+    color:rgb(255, 89, 0,0.75);
   }
   /*about me*/
   .car{
-    background-image: url(https://bit.ly/384KxXq);
+    background-image: url(https://bit.ly/2KAYjHc);
     background-attachment: fixed;
     background-size: cover;
   }
@@ -227,7 +227,7 @@
   /*contuct*/
   .bg-img {
     /* The image used */
-    background-image: url(https://bit.ly/384KxXq);
+    background-image: url(https://bit.ly/2KAYjHc);
     background-attachment: fixed;
     background-size: cover;
   
@@ -267,7 +267,7 @@
   
   /* Set a style for the submit button */
   .btn {
-    background-color:yellow;
+    background-color:rgb(255, 89, 0);
     color:navy;
     padding: 16px 20px;
     border: none;
@@ -287,10 +287,13 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:rgba(131, 72, 136, 0.596);
+    height: 20px;
+   /*  background-color:rgba(131, 72, 136, 0.596); */
+   background-color:rgb(255, 89, 0,0.75);
     color: white;
     text-align: center;
   }
   #wh{
+    font-size:x-small;
     color: white;
   }
