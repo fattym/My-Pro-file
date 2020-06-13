@@ -4,10 +4,6 @@
     --menu-speed: 0.75s;
   }
   
-*{
-
-}
-
 body{
     font-family: 'Yatra One', cursive;
    /*  background-image: url(https://bit.ly/2uz4VkJ); */
@@ -16,6 +12,10 @@ body{
     background-size: cover;
     
 
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
 .borer{
   border: brown p;
