@@ -41,13 +41,6 @@ h1,h2{
     font-family: 'Lobster', cursive;
     color: rgb(255, 89, 0);
 }
-p{
-    font: 1em sans-serif;
-    text-align: center;
-    font-size: large;
-    color: navy;
-}
-
 
 
 /* MENU STYLES */
@@ -218,7 +211,7 @@ h1,img:hover {
 
 /**/
 
-.icons{
-  display: inline-block;
-  justify-content: center;
+#icons {
+  display: flex;
+  align-items: center;
 }
