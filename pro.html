@@ -1,20 +1,226 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" class="w3-circle"
+    href="https://cdn.pixabay.com/photo/2018/01/06/23/53/knight-3066217_960_720.jpg" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Yatra+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="~/X/css/style.css" rel="stylesheet" type="text/css" media="screen" runat="server" />
+  <link rel="stylesheet" href="./css/skil.css">
+  <link rel="stylesheet" href="./css/gal.css">
+  <title>Joseph</title>
+</head>
+
+<body>
+  <main>
+    <div class="border">
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+          <div></div>
+        </div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gal.html">Education</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="pro.html">Projects</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page">
+
+        <section>
+          <h1>Projects</h1>
       
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+          <div class="container">
+            <div class="item" id="1">
+              <img src="./img/p2.png" alt="Instagram">
+              <div class="text">
+                <h3>Insta clone</h4>
+                <p> Creating a clone of the website for the popular photo app Instagram</p>
+              </div>
+              <div class="button">Learn More</div>
+            </div>
+      
+            <div class="item" id="2">
+              <img src="./img/p.png" alt="Git search">
+              <div class="text">
+                <h3>PROJECT 2</h4>
+                <p>Short Description</p>
+              </div>
+              <div class="button">Learn More</div>
+            </div>
+      
+            <div class="item" id="3">
+              <img src="./img/p11.png" alt="Delani studio">
+              <div class="text">
+                  <h3>PROJECT 3</h4>
+                <p>Short Description</p>
+                </div>
+                <div class="button">Learn More</div>
+            </div>
+      
+            <div class="item" id="4">
+              <img src="./img/p5.png" alt="Awards">
+             
+              <div class="text">
+                <h3>PROJECT 4</h4>
+                <p>Short Description</p>
+              </div>
+              <div class="button">Learn More</div>
+            </div>
+      
+            <div class="item" id="5">
+              <img src="./img/p12.png" alt="Gallery">
+              <div class="text">
+                <h3>PROJECT 5</h4>
+                <p>Short Description</p>
+              </div>
+              <div class="button">Learn More</div>
+            </div>
+      
+            <div class="item" id="6">
+              <img src="./img/pp.png" alt="Quotes">
+              <div class="text">
+                <h3>PROJECT 6</h4>
+                <p>Short Description</p>
+              </div>
+              <div class="button">Learn More</div>
+            </div>
+        </div>
+      
+        <!-- Modal -->
+        <div id="preview" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="img" src="">
+            <div id="details">
+              <h3 id="title"></h3>
+              <p id="info">Some text</p>
+              <div class="button" id="live">View</div>
+                <i class="fa fa-github-square" id="github"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      </div>
+      <div id="loading"></div>
+      <script src="j.js"></script>
+      <script>
+        var modalInfo = {
+          1: {
+            title: "Insta clone",
+            info: "The app is a photo sharing app which allows users to share, like, comment, follow and have followers in sharing daily activities.",
+            link: "https://app-djang.herokuapp.com/accounts/login/?next=/",
+            github: "https://github.com/fattym/Instagram"
+          },
+          2: {
+            title: "Project 2",
+            info: "...",
+            link: "#",
+            github: "#"
+          },
+          3: {
+            title: "Project 3",
+            info: "...",
+            link: "#",
+            github: "#"
+          },
+          4: {
+            title: "Project 4",
+            info: "....",
+            link: "#",
+            github: "#"
+          },
+          5: {
+            title: "Project 5",
+            info: "...",
+            link: "#",
+            github: "#"
+          },
+          6: {
+            title: "Project 6",
+            info: "...",
+            link: "#",
+            github: "#"
+          }
+        };
+        
+        // Get the modal
+        var modal = document.getElementById('preview');
+        
+        // button that opens the modal
+        var btn = document.getElementsByClassName("button");
+        
+        // <span> that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // open modal 
+        for(let i = 0; i < btn.length; i++){
+          btn[i].addEventListener("click", function() {
+            var project = btn[i].parentElement;
+            openModal(project);
+          })
+        };
+        
+        function openModal(project){
+          var id = project.id;
+          var img = project.getElementsByTagName("img")[0].src;
+          fillOut(id, img);
+          modal.style.display = "block";
+          document.getElementsByClassName("modal-content")[0].classList.add("scale");
+        }
+        
+        function fillOut(id, img){
+          document.getElementById("title").innerHTML = modalInfo[id].title;
+          document.getElementById("info").innerHTML = modalInfo[id].info;
+          document.getElementById("img").src = img;
+          document.getElementById("live").onclick = function(){
+            window.open(modalInfo[id].link,'_blank');
+          }
+          document.getElementById("github").onclick = function(){
+            window.open(modalInfo[id].github,'_blank');
+          }
+        }
+        
+        // close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+      </script>
+  </main>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
